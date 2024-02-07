@@ -1,0 +1,30 @@
+# Arquivos de byte compilados Python
+__pycache__/
+
+# Arquivos de compilação Python
+*.pyc
+*.pyo
+*.pyd
+
+# Diretório de ambiente virtual
+.venv/
+
+# Logs e arquivos de dados
+*.log
+*.csv
+
+# Arquivos de configuração
+*.ini
+*.cfg
+
+# Diretório de dependências
+lib/
+libs/
+
+# Arquivos gerados automaticamente
+*.bak
+*.swp
+*.~
+
+#Arquivos de pytest
+.pytest_cache
