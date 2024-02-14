@@ -28,3 +28,6 @@ libs/
 
 #Arquivos de pytest
 .pytest_cache
+
+#Excessoes
+!Pytest.ini
