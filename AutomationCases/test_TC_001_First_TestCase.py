@@ -3,6 +3,7 @@ import pytest
 #Test case method must be started with 'test_' 
 
 a=101
+actual_result = 'Testing'
 
 #Decorator
 @pytest.mark.TopPriority
@@ -15,6 +16,7 @@ def test_tc_001_Login_Logout_Testing():
 def test_tc_003_Login_Logout_Invalid_Credentials():
     print('This is Top Priority')
     print('This is end of testcase')
+    assert actual_result == 'Hello', f'These 2 values must be same'
 
 
 # Print statement output display on console: pytest -s 
