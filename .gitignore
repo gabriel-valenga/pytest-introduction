@@ -1,7 +1,7 @@
 # Arquivos de byte compilados Python
 __pycache__/
 
-# Arquivos de compilação Python
+# Python compilated files
 *.pyc
 *.pyo
 *.pyd
@@ -31,3 +31,6 @@ libs/
 
 #Excessoes
 !Pytest.ini
+
+Authentication.json
+
