@@ -29,8 +29,10 @@ libs/
 #Arquivos de pytest
 .pytest_cache
 
-#Excessoes
+#Exceptions
 !Pytest.ini
 
 Authentication.json
 
+#Excel files
+*.xlsx
