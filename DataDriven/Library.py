@@ -22,9 +22,9 @@ class ExcelSheet:
     def fetch_sheet_key_names(self):
         sheet_max_columns = self.fetch_sheet_column_count()
         key_names= []
-        for i in range(i, sheet_max_columns + 1):
+        for i in range(1, sheet_max_columns + 1):
             cell = sheet.cell(row=1, column=i)
-            key_names.insert(cell.value)
+            key_names.insert(i-1,cell.value)
         return key_names
     
 
@@ -34,4 +34,6 @@ class ExcelSheet:
         key_names = self.fetch_sheet_key_names()
         for i in range(1, sheet_max_columns + 1):
             cell = sheet.cell(row=row_number, column=i)
-            json_request.update({key_names[i-1]: cell.value})
+            value = cell.value if not cell.is_date else cell.value.strftime('%Y-%m-%d')
+            json_request.update({key_names[i-1]: value})
+        return json_request
