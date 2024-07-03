@@ -11,4 +11,6 @@ TC_001_Get_Request
     Log To Console    ${Application_URL}
     Log To Console    ${url}
 
-
+# $ to store common variables
+# @ to store list variables 
+# & to store dict variables
