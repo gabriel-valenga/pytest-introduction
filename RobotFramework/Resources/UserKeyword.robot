@@ -13,4 +13,11 @@ Fetch and Validate Get Status Code
     Create Session    SessionName    ${base_url}
     ${response}    Get Request    SessionName    api/studentDetails/{studentId}
     ${statusCode}    Convert To String    ${response.status_code}  
-    Should Be Equal    ${statusCode}    ${expectedStatusCode}     
+    Should Be Equal    ${statusCode}    ${expectedStatusCode}    
+
+
+Fetch and Return Get Response
+    [Arguments]    ${studentId}
+    Create Session    SessionName    ${base_url}
+    ${response}    Get Request    SessionName    api/studentDetails/{studentId}
+    [Return]    ${response} 
