@@ -2,7 +2,7 @@
 Library    RequestsLibrary
 Library    JSONLibrary
 Library    Collections
-
+Library    ../ReadContent/ReadJsonContent.py
 
 *** Variables ***
 ${base_url}    http://thetestingworldapi.com/
@@ -21,3 +21,9 @@ Fetch and Return Get Response
     Create Session    SessionName    ${base_url}
     ${response}    Get Request    SessionName    api/studentDetails/{studentId}
     [Return]    ${response} 
+
+
+Fetch Request content
+    ${json_body}    read_request_content
+    [Return]    ${response}
+    
