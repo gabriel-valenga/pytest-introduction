@@ -9,6 +9,7 @@ ${BASE_URL}    http://thetestingworldapi.com/
 
 *** Test Cases ***
 TC_008 update student 
+    [Tags]    TagB
     Create Session    updateStudent    ${BASE_URL}
     &{body}    Create Dictionary    id=1818 first_name=Testing    middle_name=Update    last_name=World    date_of_birth=12/12/1990
     &{header}    Create Dictionary    Content-Type=application/json

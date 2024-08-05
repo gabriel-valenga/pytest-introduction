@@ -21,6 +21,7 @@ Get Student Details
 
 *** Test Cases ***
 TC_009 add new student and then get new student added
+    [Tags]    TagA
     Create Session    addStudent    ${BASE_URL}
     &{body}    Create Dictionary    first_name=Testing    middle_name=A    last_name=World    date_of_birth=12/12/1990
     &{header}    Create Dictionary    Content-Type=application/json

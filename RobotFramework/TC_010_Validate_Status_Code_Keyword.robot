@@ -14,6 +14,7 @@ ${base_url}    http://thetestingworldapi.com/
 *** Test Cases ***
 TC_010_Fetch_Student_Details_By_Id
     [Documentation]    This testcase is for fetch student details by Id
+    [Tags]    TagA
     [Timeout]    1s
     [Setup]    Test Begin
     [Teardown]    Test End
