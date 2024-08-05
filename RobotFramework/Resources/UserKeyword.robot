@@ -26,4 +26,12 @@ Fetch and Return Get Response
 Fetch Request content
     ${json_body}    read_request_content
     [Return]    ${response}
+
+
+Test Begin
+    Log To Console    Test Begin
+
+
+Test End
+    Log To Console    Test End
     
